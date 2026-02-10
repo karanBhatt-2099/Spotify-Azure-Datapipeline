@@ -1,0 +1,9 @@
+{
+	"name": "datafactory2099",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4879d65f-031b-4db0-9df4-8b4b9c8021b3",
+		"tenantId": "90272014-e6ec-4c61-8181-990abf4ffaf9"
+	}
+}
