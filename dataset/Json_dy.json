@@ -1,0 +1,40 @@
+{
+	"name": "Json_dy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_gen2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_con": {
+				"type": "string"
+			},
+			"p_fol": {
+				"type": "string"
+			},
+			"p_file": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().p_file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().p_fol",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().p_con",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}
