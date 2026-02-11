@@ -109,7 +109,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"p_con": "bronze",
-							"p_fol": "cdc",
+							"p_fol": {
+								"value": "@{pipeline().parameters.table}_cdc",
+								"type": "Expression"
+							},
 							"p_file": "cdc.json"
 						}
 					},
@@ -246,7 +249,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"p_con": "bronze",
-										"p_fol": "cdc",
+										"p_fol": {
+											"value": "@{pipeline().parameters.table}_cdc",
+											"type": "Expression"
+										},
 										"p_file": "empty.json"
 									}
 								}
