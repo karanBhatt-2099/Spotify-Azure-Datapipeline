@@ -3,7 +3,7 @@
 This project demonstrates a complete end-to-end Azure Lakehouse Data Engineering solution built using Azure-native services and Databricks. It covers data ingestion, transformation, dimensional modeling, streaming, and analytics-ready data delivery using modern data engineering best practices.
 The solution follows the Medallion Architecture (Bronze, Silver, Gold) and implements incremental processing, Slowly Changing Dimensions (SCD), and scalable Spark transformations.
 
-🛠️ Tech Stack
+🛠️ Tech Stack:
 
 Azure Data Factory (ADF) – Orchestration & ingestion
 Azure SQL Database – Source system
@@ -15,6 +15,7 @@ Spark Streaming (Auto Loader) – Incremental & streaming ingestion
 PySpark – Data transformations
 
 🏗️ Architecture Overview:
+
 1️⃣ Data Ingestion Layer (Bronze)
 Parameterized and incremental ADF pipelines
 Data ingestion from Azure SQL DB and external sources
